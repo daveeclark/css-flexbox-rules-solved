@@ -27,6 +27,15 @@ p {
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .subtext {
@@ -37,6 +46,32 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+  max-width: 500px;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+}
+
+/* .form-input-control .form-group-horizontal-control {
+  display: flex;
+  height: 30px;
+} */
+
+.form-group-vertical-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-radio-control {
+  font-weight: normal;
 }
 
 a {
@@ -48,10 +83,26 @@ label {
   font-weight: bold;
 }
 
+#state,
+#city {
+  height: 30px;
+}
+
+label[for="male"],
+label[for="female"],
+label[for="other"],
+label[for="stay-signed-in"] {
+  font-weight: normal;
+}
+
 input {
   width: 100%;
   height: 30px;
   padding: 5px;
+}
+
+input[type="text"] {
+  height: 30px;
 }
 
 input[type="checkbox"],
