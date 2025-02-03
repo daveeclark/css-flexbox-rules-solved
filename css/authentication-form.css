@@ -46,7 +46,12 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
-  max-width: 500px;
+}
+
+.form-submit-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-input-control {
